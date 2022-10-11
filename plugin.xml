@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.vmartins.cordova.netinterfaces"
+    version="1.0.0">
+
+    <name>NetInterfaces</name>
+    <description>This plugin allows your application to retrieve the network interface information.</description>
+    <license>MIT</license>
+    <keywords>local,ip,interface,network,proxy</keywords>
+    <repo>https://github.com/vmartins/cordova-plugin-netinterfaces.git</repo>
+    <issue>https://github.com/vmartins/cordova-plugin-netinterfaces/issues</issue>
+
+    <js-module src="www/netinterfaces.js" name="NetInterfaces">
+        <clobbers target="NetInterfaces" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NetInterfaces">
+                <param name="android-package" value="com.vmartins.cordova.netinterfaces.NetInterfaces"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/NetInterfaces.java" target-dir="src/com/vmartins/cordova/netinterfaces" />
+
+    </platform>
+
+</plugin>

@@ -1,0 +1,38 @@
+{
+  "name": "cordova-plugin-netinterfaces",
+  "version": "1.0.0",
+  "description": "This plugin allows your application to retrieve the network interfaces information.",
+  "cordova": {
+    "id": "cordova-plugin-netinterfaces",
+    "platforms": [
+      "android"
+    ]
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmartins/cordova-plugin-netinterfaces"
+  },
+  "keywords": [
+    "local",
+    "ip",
+    "mac",
+    "interface",
+    "network",
+    "proxy",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Vitor Martins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmartins/cordova-plugin-netinterfaces/issues"
+  },
+  "homepage": "https://github.com/vmartins/cordova-plugin-netinterfaces#readme"
+}
